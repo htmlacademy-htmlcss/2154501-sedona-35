@@ -257,24 +257,16 @@ body {
 .button-red{
   background-color: #756157;
   color: #FFFFFF;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  text-decoration: none;
 }
 .button-grey{
   background-color: #82B3D3;
   color: #FFFFFF;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  text-decoration: none;
 }
 .button-green{
   background-color: #7DB54F;
   color: #FFFFFF;
+}
+.hotel-card-button{
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
