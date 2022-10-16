@@ -23,7 +23,7 @@
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-list">
+        <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <img class="search" src="./images/search.svg " alt="Поиск">
@@ -38,7 +38,7 @@
               <span class="visually-hidden">
               Избранное
               </span>
-          </a>
+            </a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">ХОЧУ СЮДА!</a>
@@ -46,7 +46,9 @@
         </ul>
       </nav>
     </header>
-    <main class="main-index">
+
+    <main class="main-container main-index">
+      <div class="page-container">
       <section class="greetings">
         <h1 class="visually-hidden">Седона</h1>
         <img class="greetings-image" src="./images/welcome.svg" width="458" height="352" alt="Welcome to sedona">
@@ -59,47 +61,72 @@
         <h3 class="visually-hidden">Преимущества</h3>
         <ul class="advantages-list">
           <li class="advantages-item tape-1">
-            <h4 class="advantages-title">Настоящий городок</h4>
-            <p class="advantages-description">Седона — не аттракцион для<br>туристов, там течёт своя<br>жизнь</p>
-            <img class="advantages-img tape-1" src="./images/tape-1.jpg" width="800" height="384" alt="House-with-flags">
+            <div class="tape1">
+              <div class="advantages-item1">
+                <h4 class="advantages-title">Настоящий городок</h4>
+                <p class="advantages-description">Седона — не аттракцион для<br>туристов, там течёт своя<br>жизнь</p>
+              </div>
+              <img class="advantages-img tape-1" src="./images/tape-1.jpg" width="800" height="384" alt="House-with-flags">
+            </div>
           </li>
+          <div class="tape2">
           <li class="advantages-item tape-2">
-            <h4 class="advantages-title">Небольшая<br>площадь</h4>
-            <p class="advantages-description">Все достопримечательности<br>находятся очень близко</p>
+              <div>
+                <h4 class="advantages-title">Небольшая<br>площадь</h4>
+                <p class="advantages-description">Все достопримечательности<br>находятся очень близко</p>
+              </div>
           </li>
           <li class="advantages-item tape-2 tape-2-2">
-            <h4 class="advantages-title">Красивая<br>дорога</h4>
-            <p class="advantages-description">Ехать в Седону из Лас-Вегаса<br>совсем не скучно!</p>
+            <div>
+              <h4 class="advantages-title">Красивая<br>дорога</h4>
+              <p class="advantages-description">Ехать в Седону из Лас-Вегаса<br>совсем не скучно!</p>
+            </div>
           </li>
           <li class="advantages-item tape-2">
-            <h4 class="advantages-title">Мало<br>туристов</h4>
-            <p class="advantages-description">Большинство едет в Гранд<br>Каньон и толпится там</p>
+            <div>
+              <h4 class="advantages-title">Мало<br>туристов</h4>
+              <p class="advantages-description">Большинство едет в Гранд<br>Каньон и толпится там</p>
+            </div>
           </li>
+        </div>
+
           <li class="advantages-item tape-3">
-            <img class="advantages-img tape-3" src="./images/tape-3.jpg" width="800" height="384" alt="evils-bridge">
-               <h4 class="advantages-title">Там есть мост дьявола</h4>
-            <p class="advantages-description">Да, по нему можно пройти!<br>Если вы осмелитесь,<br>разумеется</p>
+            <div class="tape3 tape-3">
+              <img class="advantages-img tape-3" src="./images/tape-3.jpg" width="800" height="384" alt="evils-bridge">
+              <div class="tape-3 tape-3-2">
+                <h4 class="advantages-title">Там есть мост дьявола</h4>
+                <p class="advantages-description">Да, по нему можно пройти!<br>Если вы осмелитесь,<br>разумеется</p>
+              </div>
+            </div>
           </li>
         </ul>
       </section>
       <section class="feautures">
         <h3 class="visually-hidden">Особенности</h3>
         <ul class="feautures-list">
-          <li class="feautures-item feautures-1">
-            <img class="feature-home-icon" src="./images/advantage-home.svg" alt="иконка жилья">
-            <h4 class="feautures-title">Жилье</h4>
-            <p class="feautures-description">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
-          </li>
-          <li class="feautures-item feautures-2">
-            <img class="feature-food-icon" src="./images/advantage-food.svg" alt="иконка еды">
-            <h4 class="feautures-title">Еда</h4>
-            <p class="feautures-description">Всегда заказывайте<br>топовый фирменный бургер,<br>вы не разочаруетесь!</p>
-          </li>
-          <li class="feautures-item feautures-3">
-            <img class="feature-souvenirs-icon" src="./images/advantage-suvenier.svg" alt="иконка сувениров">
-            <h4 class="feautures-title">Сувениры</h4>
-            <p class="feautures-description">Не только китайского,<br>но и настоящего местного<br>производства!</p>
-          </li>
+          <div class="feautures-list-width">
+            <div>
+            <li class="feautures-item feautures-1">
+              <img class="feature-home-icon" src="./images/advantage-home.svg" alt="иконка жилья">
+              <h4 class="feautures-title">Жилье</h4>
+              <p class="feautures-description">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
+            </li>
+            </div>
+            <div>
+            <li class="feautures-item feautures-2">
+              <img class="feature-food-icon" src="./images/advantage-food.svg" alt="иконка еды">
+              <h4 class="feautures-title">Еда</h4>
+              <p class="feautures-description">Всегда заказывайте<br>топовый фирменный бургер,<br>вы не разочаруетесь!</p>
+            </li>
+            </div>
+            <div>
+            <li class="feautures-item feautures-3">
+              <img class="feature-souvenirs-icon" src="./images/advantage-suvenier.svg" alt="иконка сувениров">
+              <h4 class="feautures-title">Сувениры</h4>
+              <p class="feautures-description">Не только китайского,<br>но и настоящего местного<br>производства!</p>
+            </li>
+            </div>
+          </div>
         </ul>
       </section>
       <section class="intrested">
@@ -108,7 +135,7 @@
         <a class="navigation-link intrested-button" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
       </section>
       <section class="newsletter">
-        <img class="subscribe-hero" src="./images/Subscribe.jpg" alt="мутные каньоны">
+        <!--<img class="subscribe-hero" src="./images/Subscribe.jpg" alt="мутные каньоны"> -->
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
           <p class="subscribe-text">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -117,8 +144,11 @@
             <button class="button newsletter-button" type="submit">Подписаться</button>
           </form>
       </section>
+      </div>
     </main>
+
     <footer class="page-footer">
+      <div class="page-footer-container">
       <section class="footer-social">
         <ul class="footer-social-list">
           <li class="footer-social-item">
@@ -148,7 +178,10 @@
           <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </address>
       </section>
-      <a class="htmlacademy-link" href="https://htmlacademy.ru/"><img class="logo" src="./images/logo_htmlacademy.svg" alt="Логотип htmlacademy"></a>
+      <section class="htmlacademy">
+        <a class="htmlacademy-link" href="https://htmlacademy.ru/"><img class="logo" src="./images/logo_htmlacademy.svg" alt="Логотип htmlacademy"></a>
+      </section>
+    </div>
     </footer>
 
   </body>
