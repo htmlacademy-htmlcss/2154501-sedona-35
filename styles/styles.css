@@ -150,6 +150,7 @@ body {
 .feautures-list{
   margin: 0;
   padding: 0;
+  display: flex;
   list-style: none;
 }
 .advantages-item{
@@ -399,4 +400,28 @@ body {
 }
 html {
   height: 100%;
+}
+.hotel-card-list{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.hotel-card-item{
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #E6E6E6;
+}
+.hotel-card-link{
+  text-decoration: none;
+}
+.stars{
+  display: flex;
+  list-style: none;
+}
+.pagination{
+  display: flex;
+  list-style: none;
+}
+.pagination-link{
+  text-decoration: none;
 }
