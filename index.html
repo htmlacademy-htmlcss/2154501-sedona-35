@@ -10,7 +10,7 @@
     <header class="page-header">
       <nav class="navigation">
         <ul class="navigation-list">
-          <li class="navigation-item">
+          <li class="navigation-item1">
             <a class="logo" href="#">
               <img class="" src="./images/logo.svg" alt="Логотип Седона."></a>
           </li>
@@ -123,19 +123,22 @@
         </ul>
       </section>
       <section class="intrested">
-      <h2 class="intrested-title">Заинтересовались?</h2>
-        <p class="intrested-text">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="navigation-link intrested-button" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+        <div class="interested-item">
+          <h2 class="intrested-title">Заинтересовались?</h2>
+          <p class="intrested-text">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <a class="navigation-link intrested-button" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+        </div>
       </section>
       <section class="newsletter">
-        <!--<img class="subscribe-hero" src="./images/Subscribe.jpg" alt="мутные каньоны"> -->
-        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+        <div class="newsletter-item">
+          <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
           <p class="subscribe-text">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label for="newsletter-email">Email</label>
+            <label for="newsletter-email" hidden>Email</label>
             <input class="field" placeholder="ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
             <button class="button newsletter-button" type="submit">Подписаться</button>
           </form>
+        </div>
       </section>
     </main>
 
