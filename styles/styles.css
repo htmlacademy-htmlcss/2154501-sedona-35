@@ -85,6 +85,9 @@ body {
   background-color: #FFFFFF;
   color: #000000;
 }
+.navigation-item{
+  max-height: 64px;
+}
 .navigation-link{
   display:block;
   padding: 20px 16px;
@@ -98,14 +101,21 @@ body {
   margin-bottom: -20px;
   margin-left: 70px;
 }
+
+.navigation-item1{
+  max-height: 70px;
+  margin-bottom: -6px;
+}
 .navigation-link2{
   display:block;
-  padding: 22px 12px;
+  padding: 20px 12px;
   font-size: 20px;
   line-height: 24px;
   text-align: center;
   text-decoration: none;
   color: #000000;
+
+
 }
 .button-want{
   background-color: #756157;
@@ -180,6 +190,8 @@ body {
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 62px;
+  margin-top: 92px;
 }
 .advantages-description{
   font-weight: 400;
@@ -193,6 +205,7 @@ body {
   display: flex;
   list-style: none;
 }
+
 .advantages-item{
   width: 400px;
   height: 384px;
@@ -273,12 +286,16 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
 }
 .intrested-text{
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+  margin: 0;
+  margin-bottom: 54px;
 }
 .intrested-button{
   margin: 0 auto;
@@ -296,16 +313,26 @@ body {
 .intrested{
   height:406px;
   width:1200px;
+  display:flex;
+}
+.interested-item{
+  margin:auto;
 }
 .newsletter{
   background-color: #F2F2F2;
   background-image:url("../images/Subscribe.jpg");
   height:415px;
   width:1200px;
+  display: flex;
 }
+.newsletter-item{
+  margin:auto;
+  margin-top: 96px;
 
+}
 .subscribe-title{
-  margin: auto;
+  margin: 0;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -319,6 +346,7 @@ body {
   line-height: 26px;
   text-align: center;
   color:#FFFFFF;
+  margin-bottom: 54px;
 }
 .page-footer-container{
   display: flex;
