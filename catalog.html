@@ -10,8 +10,9 @@
     <header class="page-header">
       <nav class="navigation">
         <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link logo" href="index.html"><img class="logo" src="./images/logo.svg" alt="Логотип Седона."></a>
+          <li class="navigation-item1">
+            <a class=" logo" href="index.html">
+              <img class="o" src="./images/logo.svg" alt="Логотип Седона."></a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="index.html">Главная</a>
@@ -23,9 +24,9 @@
             <a class="navigation-link navigation-link-current" href="#">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-list">
+        <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="navigation-link2" href="#">
               <img class="search" src="./images/search.svg " alt="Поиск">
               <span class="visually-hidden">
                 Поиск
@@ -33,7 +34,7 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="navigation-link2" href="#">
               <img class="favorits" src="./images/favorits.svg " alt="Избранное">
               <span class="visually-hidden">
               Избранное
@@ -41,7 +42,7 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Хочу сюда!</a>
+            <a class="navigation-link button-want" href="#">ХОЧУ СЮДА!</a>
           </li>
         </ul>
       </nav>
@@ -57,7 +58,7 @@
             <a class="breadcrumbs-link" href="index.html"><img class="icon" src="./images/home.svg" alt="Иконка домика"></a>
           </li>
           <li class="breadcrumbs-item">
-            <img class="icon" src="./images/arrow.svg" alt="стрелка">
+            <img class="breadcrumbs-link" src="./images/arrow.svg" alt="стрелка">
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Гостиницы</a>
@@ -125,24 +126,28 @@
     </header>
 
     <section class="catalog">
+      <div class="catalog-head">
         <h1 class="inner-main-title">Найдено гостиниц: 38</h1>
         <select class="select-control" aria-label="Сортировка">
-          <option value="cheap">Сначала дешевые</option>
-          <option value="popular">Сначала популярные</option>
-          <option value="expensive">Сначала дорогие</option>
+            <option value="cheap">Сначала дешевые</option>
+            <option value="popular">Сначала популярные</option>
+            <option value="expensive">Сначала дорогие</option>
         </select>
-        <a href="#" class="button button-active">
-          <img class="view" src="./images/view-cards.svg " alt="карточки">
-          <span class="visually-hidden" hidden>Показать карточки</span>
-        </a>
-        <a class="button button-no-active" href="#">
-          <img class="view" src="./images/view-full.svg " alt="полностью">
-          <span class="visually-hidden" hidden>Показать полностью</span>
-        </a>
-        <a class="button button-no-active" href="#">
-          <img class="view" src="./images/view-list.svg " alt="список">
-          <span class="visually-hidden" hidden>Показать списком</span>
-        </a>
+        <div class="catalog-view">
+            <a href="#" class="button button-active">
+              <img class="view" src="./images/view-cards.svg " alt="карточки">
+              <span class="visually-hidden" hidden>Показать карточки</span>
+            </a>
+            <a class="button button-no-active" href="#">
+              <img class="view" src="./images/view-full.svg " alt="полностью">
+              <span class="visually-hidden" hidden>Показать полностью</span>
+            </a>
+            <a class="button button-no-active" href="#">
+              <img class="view" src="./images/view-list.svg " alt="список">
+              <span class="visually-hidden" hidden>Показать списком</span>
+            </a>
+        </div>
+        </div>
 
         <ul class="hotel-card-list">
           <li class="hotel-card-item">
@@ -212,35 +217,39 @@
           </li>
         </ul>
 
-        <ul class="pagination">
-          <li class="pagination-item">
-            <a class="pagination-link pagination-current">1</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">2</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">3</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">4</a>
-          </li>
-          <li class="pagination-item">
-            <a>...</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">10</a>
-          </li>
-        </ul>
+        <div class="pagination-container">
+          <ul class="pagination">
+            <li class="pagination-item">
+              <a class="pagination-link pagination-current">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">4</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link pagination-clear">...</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">10</a>
+            </li>
+          </ul>
+        </div>
         </section>
-        <section class="newsletter">
-          <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-            <p>Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+        <section class="newsletter-catalog">
+          <div class="newsletter-item">
+            <h2 class="subscribe-title black">Подпишитесь на рассылку</h2>
+            <p class="subscribe-text black">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
             <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label for="newsletter-email">Email</label>
+              <label for="newsletter-email" hidden>Email</label>
               <input class="field" placeholder="ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
               <button class="button newsletter-button" type="submit">Подписаться</button>
             </form>
+          </div>
         </section>
       </div>
     </main>
