@@ -77,11 +77,11 @@ body {
   margin-left: 70px;
 }
 
-.navigation-item1{
+.navigation-item-high{
   max-height: 70px;
   margin-bottom: -6px;
 }
-.navigation-link2{
+.navigation-link-for-icon{
   display:block;
   padding: 20px 12px;
   font-size: 20px;
@@ -105,7 +105,7 @@ body {
   align-items: center;
 }
 .greetings{
-  background-image: url("..//images/main-background.jpg");
+  background-image: url("../images/main-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 1200px;
@@ -302,7 +302,7 @@ body {
 }
 .newsletter{
   background-color: #F2F2F2;
-  background-image:url("../images/Subscribe.jpg");
+  background-image:url("../images/subscribe.jpg");
   height:415px;
   width:1200px;
   display: flex;
@@ -380,15 +380,23 @@ body {
   margin-bottom:auto;
 }
 .inner-header{
+  display:flex;
+  flex-direction: column;
   background-color: #F2F2F2;
   background-image:url("../images/filter.jpg");
-  height:412px;
-  width:1200px;
+  background-repeat: no-repeat;
+  min-height:412px;
+  max-width:1200px;
+  margin: 0;
+  padding: 0;
+  padding-top: 35px;  padding-left: 70px;
+
 }
 .inner-header, .catalog-hotels{
   color:#FFFFFF;
   background-color: #F2F2F2;
 }
+
 .catalog{
   width:1200px;
 }
@@ -399,6 +407,7 @@ body {
   display: flex;
 }
 .inner-header-title{
+  margin: 0;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
