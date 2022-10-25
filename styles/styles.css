@@ -40,14 +40,25 @@ body {
   justify-content: space-between;
 }
 .navigation-list{
+  position: relative;
   width: 700px;
   margin: 0;
   padding: 0;
+  padding-left: 238px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
+.logo{
+  /*margin-bottom: -20px;
+  margin-left: 70px;*/
+  position: absolute;
+  left: 70px;
+  top: 0;
+  z-index: 1;
+}
+
 .navigation-user {
   max-width: 268px;
   margin-left: auto;
@@ -72,10 +83,7 @@ body {
   text-decoration: none;
   color: #000000;
 }
-.logo{
-  margin-bottom: -20px;
-  margin-left: 70px;
-}
+
 
 .navigation-item-high{
   max-height: 70px;
@@ -89,20 +97,44 @@ body {
   text-align: center;
   text-decoration: none;
   color: #000000;
-
-
+}
+.heart{
+  position: relative;
+}
+.twelve{
+  display: inline-block;
+  background: #7DB54F;
+  color: #FFFFFF;
+  text-align: center;
+  border-radius: 50%;
+  font-family: PT Sans;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 10px;
+  padding: 3px;
+  z-index: 1;
+  position: absolute;
+  left: 21px;
+  top: 13px;
 }
 .button-want{
   background-color: #756157;
   color: #FFFFFF;
   margin: 0;
-  padding: 0;
+  margin-left: 20px;
+  padding: 8px 34px;
   display:block;
   text-align: center;
   justify-content: center;
   justify-items: center;
   align-self: center;
   align-items: center;
+  border-radius: 4px;
+  border: none;
+  font-family: PT Sans;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
 }
 .greetings{
   background-image: url("../images/main-background.jpg");
@@ -131,8 +163,9 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-
 }
+
+
 .promo{
   font-weight: 700;
   font-size: 30px;
@@ -280,8 +313,8 @@ body {
   margin-bottom: 54px;
 }
 .intrested-button{
+  padding: 0;
   margin: 0 auto;
-  display: block;
   height:52px;
   width:376px;
   font-weight: 700;
@@ -291,6 +324,10 @@ body {
   text-transform: uppercase;
   color:#FFFFFF;
   background-color: #756157;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
 }
 .intrested{
   height:406px;
@@ -336,6 +373,35 @@ body {
   text-align: center;
   color:#FFFFFF;
   margin-bottom: 54px;
+}
+.newsletter-form{
+
+  display: flex;
+  width: 684px;
+  justify-content: flex-end;
+}
+.newsletter-button{
+  border: none;
+  border-radius: 0 4px 4px 0;
+  width: 232px;
+  height: 52px;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  font-family: PT Sans, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+.field{
+  flex-grow: 1;
+  border-radius: 4px 0 0 4px;
+  border: none;
+  font-family: PT Sans, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24x;
+  padding-left: 20px;
 }
 .black{
   color:#000000;
