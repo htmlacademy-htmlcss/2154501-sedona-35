@@ -345,7 +345,7 @@ body {
   display: flex;
 }
 .newsletter-catalog{
-  background-color: #F2F2F2;
+  background-color: #FFFFFF;
   height:415px;
   width:1200px;
   display: flex;
@@ -402,6 +402,7 @@ body {
   font-size: 18px;
   line-height: 24x;
   padding-left: 20px;
+  background-color: #F2F2F2;
 }
 .black{
   color:#000000;
@@ -523,9 +524,10 @@ body {
   line-height: 21px;
   width:292px;
   height:50px;
-  border:1px solid #E5E5E5;
+  border:2px solid #E5E5E5;
   border-radius: 4px;
   margin-right: 70px;
+  margin-left: 200px;
    }
 .catalog-head{
   margin-top: 50px;
@@ -687,8 +689,9 @@ html {
   margin-right: 8px;
 }
 .pagination-link{
-  display: block;
+  display: flex;
   box-sizing: border-box;
+  border-radius: 4px;
   width: 60px;
   height: 60px;
   padding: 12px 24px;
@@ -698,6 +701,8 @@ html {
   color: #ffffff;
   background-color: #82B3D3;
   text-decoration: none;
+  justify-content: center;
+  align-items: center;
 }
 .pagination-current{
   color:#000000;
