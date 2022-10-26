@@ -67,12 +67,24 @@ body {
   min-width: 44px;
   min-height: 64px;
 }
+.navigation-link-current::before {
+  position: absolute;
+  right: 16px;
+  bottom: -1px;
+  left: 16px;
+  height: 2px;
+  background-color: #756257;
+  z-index: 1;
+  content: "";
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
 .page-header{
   background-color: #FFFFFF;
   color: #000000;
 }
 .navigation-item{
   max-height: 64px;
+  position: relative;
 }
 .navigation-link{
   display:block;
@@ -101,7 +113,7 @@ body {
 .heart{
   position: relative;
 }
-.twelve{
+.number-of-heart{
   display: inline-block;
   background: #7DB54F;
   color: #FFFFFF;
@@ -193,6 +205,17 @@ body {
   list-style: none;
 }
 .advantages-title{
+  position: relative;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 62px;
+  margin-top: 92px;
+}
+.advantages-title-white{
+  position: relative;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -226,7 +249,24 @@ body {
 .feautures-item{
   width: 400px;
   height: 384px;
-
+}
+.advantages-title::before {
+  position: absolute;
+  bottom: -30px;
+  left: 170px;
+  width: 60px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+  content: "";
+}
+.advantages-title-white::before {
+  position: absolute;
+  bottom: -30px;
+  left: 170px;
+  width: 60px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.3);
+  content: "";
 }
 .tape1{
   width: 1200px;
@@ -426,6 +466,18 @@ body {
   list-style: none;
   display: flex;
 }
+.social{
+  fill: #83B3D3;
+}
+.social:hover{
+  fill: #68A2CA;
+}
+.social:focus{
+  fill: #68A2CA;
+}
+.social:active{
+  fill:rgba(104, 162, 202, 0.3);
+}
 .footer-contacts-phone{
   font-weight: 400;
   font-size: 40px;
@@ -438,6 +490,16 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
+.footer-contacts-phone:hover{
+  color: #756157;
+}
+.footer-contacts-phone:focus{
+  color: #756157;
+}
+.footer-contacts-phone:active{
+  color: rgba(117, 97, 87, 0.3);
+}
 .htmlacademy{
   width: 115px;
   height: 33px;
@@ -445,6 +507,12 @@ body {
   margin-right: 70px;
   margin-top:auto;
   margin-bottom:auto;
+}
+.logo-html-academy:hover, .logo-html-academy:focus{
+  fill:#756157;
+}
+.logo-html-academy:active{
+  fill:rgba(117, 97, 87, 0.3);
 }
 .inner-header{
   display:flex;
@@ -585,9 +653,40 @@ body {
   border-radius: 4px;
   border: none;
 }
+.button:disabled{
+  background-color: #E5E5E5;
+}
 .button-red{
   background-color: #756157;
   color: #FFFFFF;
+}
+.button-red:hover{
+  background-color: #615048;
+}
+.button-red:focus{
+  background-color: #615048;
+}
+.button-red:active{
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-blue:active{
+  color: rgba(255, 255, 255, 0.3);
+}
+.button-blue:hover{
+  background-color: #68A2CA;
+}
+.button-blue:focus{
+  background-color: #68A2CA;
+}
+.button-green:active{
+  color: rgba(255, 255, 255, 0.3);
+}
+.button-green:hover{
+  background-color: #6C9E42;
+}
+.button-green:focus{
+  background-color: #6C9E42;
 }
 
 .button-grey{
@@ -703,6 +802,9 @@ html {
   text-decoration: none;
   justify-content: center;
   align-items: center;
+}
+.pagination-link:active{
+  color: rgba(255, 255, 255, 0.3);
 }
 .pagination-current{
   color:#000000;
