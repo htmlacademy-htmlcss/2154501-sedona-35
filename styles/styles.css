@@ -710,6 +710,9 @@ body {
 .catalog-view-link:active{
   border: 2px solid #000000;
 }
+.view:focus{
+  outline: none;
+}
 .hotel-card-title{
   margin: 0;
   padding: 0;
