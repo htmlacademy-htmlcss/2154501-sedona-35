@@ -51,8 +51,6 @@ body {
   align-items: center;
 }
 .logo{
-  /*margin-bottom: -20px;
-  margin-left: 70px;*/
   position: absolute;
   left: 70px;
   top: 0;
@@ -95,7 +93,6 @@ body {
   text-decoration: none;
   color: #000000;
 }
-
 
 .navigation-item-high{
   max-height: 70px;
@@ -176,7 +173,6 @@ body {
   bottom: 0;
   left: 0;
 }
-
 
 .promo{
   font-weight: 700;
@@ -469,10 +465,7 @@ body {
 .social{
   fill: #83B3D3;
 }
-.social:hover{
-  fill: #68A2CA;
-}
-.social:focus{
+.social:hover, .social:focus{
   fill: #68A2CA;
 }
 .social:active{
@@ -491,10 +484,7 @@ body {
   margin-right: auto;
 }
 
-.footer-contacts-phone:hover{
-  color: #756157;
-}
-.footer-contacts-phone:focus{
+.footer-contacts-phone:hover, .footer-contacts-phone:focus{
   color: #756157;
 }
 .footer-contacts-phone:active{
@@ -660,10 +650,7 @@ body {
   margin-right: 70px;
   margin-left: 200px;
 }
-.select-control:hover{
-  border:2px solid #68A2CA;
-}
-.select-control:focus{
+.select-control:hover, .select-control:focus{
   border:2px solid #68A2CA;
 }
 .select-control:active{
@@ -701,14 +688,11 @@ body {
 .view-no-active{
   border: 2px solid #E5E5E5;
 }
-.catalog-view-link:hover{
+.catalog-view-link:hover, .catalog-view-link:active{
   border: 2px solid #000000;
 }
 .catalog-view-link:focus{
   border: 2px solid #68A2CA;
-}
-.catalog-view-link:active{
-  border: 2px solid #000000;
 }
 .view:focus{
   outline: none;
@@ -763,10 +747,7 @@ body {
   background-color: #756157;
   color: #FFFFFF;
 }
-.button-red:hover{
-  background-color: #615048;
-}
-.button-red:focus{
+.button-red:hover, .button-red:focus{
   background-color: #615048;
 }
 .button-red:active{
@@ -776,22 +757,16 @@ body {
 .button-blue:active{
   color: rgba(255, 255, 255, 0.3);
 }
-.button-blue:hover{
+.button-blue:hover, .button-blue:focus{
   background-color: #68A2CA;
 }
-.button-blue:focus{
-  background-color: #68A2CA;
-}
+
 .button-green:active{
   color: rgba(255, 255, 255, 0.3);
 }
-.button-green:hover{
+.button-green:hover, .button-green:focus{
   background-color: #6C9E42;
 }
-.button-green:focus{
-  background-color: #6C9E42;
-}
-
 .button-grey{
   background-color: #82B3D3;
   color: #FFFFFF;
@@ -834,7 +809,6 @@ html {
   grid-column: 1 / -1;
   object-fit: cover;
 }
-
 
 .hotel-card-link{
   display:grid;
@@ -909,12 +883,7 @@ html {
 .pagination-link:active{
   color: rgba(255, 255, 255, 0.3);
 }
-.pagination-link:hover{
-  color: rgba(255, 255, 255, 0.3);
-  background-color: #68A2CA;
-  border: 1px solid #82B3D3;
-}
-.pagination-link:focus{
+.pagination-link:hover, .pagination-link:focus{
   color: rgba(255, 255, 255, 0.3);
   background-color: #68A2CA;
   border: 1px solid #82B3D3;
