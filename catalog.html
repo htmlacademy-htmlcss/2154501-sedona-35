@@ -75,19 +75,22 @@
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="control-input" type="checkbox" name="swimming-pool" checked>
-                  Бассейн
+                  <span class="control-mark"></span>
+                  <span class="control-label">Бассейн</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="control-input" type="checkbox" name="parking" checked>
-                  Парковка
+                  <span class="control-mark"></span>
+                  <span class="control-label">Парковка</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
                   <input class="control-input" type="checkbox" name="wi-fi">
-                  Wi-Fi
+                  <span class="control-mark"></span>
+                  <span class="control-label">Wi-Fi</span>
                 </label>
               </li>
             </ul>
@@ -126,9 +129,9 @@
             <div class="range">
               <div class="range-wrapper-inputs ">
                 <label class="catalog-filter-label label-min">
-                  <input class="range-input range-left" type="number" value="0" name="min-price">                </label>
+                  <input class="range-input range-left" type="number" value="0" name="min-price"></label>
                 <label class="catalog-0filter-label label-max">
-                  <input class="range-input range-right" type="number" value="9000" name="max-price">                </label>
+                  <input class="range-input range-right" type="number" value="9000" name="max-price"></label>
               </div>
 
               <div class="range-scale">
@@ -155,11 +158,13 @@
     <section class="catalog">
       <div class="catalog-head">
         <h1 class="inner-main-title">Найдено гостиниц: 38</h1>
-        <select class="select-control" aria-label="Сортировка">
-            <option value="cheap">Сначала дешевые</option>
-            <option value="popular">Сначала популярные</option>
-            <option value="expensive">Сначала дорогие</option>
-        </select>
+        <div class= "select sorting-type">
+          <select class="select-control" aria-label="Сортировка">
+              <option value="cheap">Сначала дешевые</option>
+              <option value="popular">Сначала популярные</option>
+              <option value="expensive">Сначала дорогие</option>
+          </select>
+        </div>
         <div class="catalog-view">
             <div class="view catalog-view-link view-active">
               <a href="#" class="button button-active">

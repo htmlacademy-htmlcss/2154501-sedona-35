@@ -540,6 +540,34 @@ body {
 .infrostraction-block{
   margin-right: 70px;
 }
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+/* Mark */
+.control-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: none;
+  background: #FFFFFF;
+  border-radius: 4px;
+}
+.control:hover .control-mark{
+  background: rgba(255, 255, 255, 0.6);
+}
+.control:hover .control-label{
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.control-input:disabled + .control-mark {
+  border-color: #242424;
+}
+
 .type-house-block{
   margin-right: 140px;
 }
@@ -642,18 +670,33 @@ body {
   color: #000000;
   text-transform: uppercase;
 }
+.select {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 292px;
+  margin-right: 70px;
+  margin-left: 200px;
+}
+
 .select-control{
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  width:292px;
+  width: 100%;
+  padding-left: 20px;
+  /*padding-right: 48px;*/
   height:50px;
   border:2px solid #E5E5E5;
   border-radius: 4px;
-  margin-right: 70px;
-  margin-left: 200px;
+  background-color: #ffffff;
+  background-image: url("../images/select-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  appearance: none;
 }
-.select-control:hover, .select-control:focus{
+.select-control:hover,
+.select-control:focus{
   border:2px solid #68A2CA;
 }
 .select-control:active{
