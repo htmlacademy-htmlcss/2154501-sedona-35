@@ -580,11 +580,10 @@ body {
 .control:active .control-label{
   color: rgba(255, 255, 255, 0.3);
 }
-
 .control-input:disabled + .control-mark {
   background: rgba(255, 255, 255, 0.3);
 }
-.control-input:disabled + .control-label {
+.control-input:disabled ~ .control-label {
   color: rgba(255, 255, 255, 0.3);
 }
 .control-input[type="checkbox"]:checked + .control-mark::before{
@@ -624,7 +623,19 @@ body {
 .control-input:disabled + .control-mark-circle {
   background: rgba(255, 255, 255, 0.3);
 }
-
+.control-input[type="radio"]:checked + .control-mark-circle::before{
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  content: "";
+  background-color: #3F5E72;
+  border-radius: 50%;
+}
+.control:hover .control-mark-circle::before{
+  background-color: rgba(63, 94, 114, 0.6);
+}
 .type-house-block{
   margin-right: 140px;
 }
@@ -647,12 +658,16 @@ body {
   color: #ffffff;
   list-style-type: none;
   margin-bottom: 40px;
+
 }
 .breadcrumbs-link{
+  display: flex;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   margin-right: 10px;
+  justify-content: center;
+  align-items: center;
 }
 .breadcrumbs-link:hover{
   color: rgba(255, 255, 255, 0.6);
@@ -791,15 +806,16 @@ body {
 .view-no-active{
   border: 2px solid #E5E5E5;
 }
-.catalog-view-link:hover, .catalog-view-link:active{
+.catalog-view-link:hover {
   border: 2px solid #000000;
 }
-.catalog-view-link:focus{
+.catalog-view-link:focus-within{
   border: 2px solid #68A2CA;
 }
-.view:focus{
-  outline: none;
+.catalog-view-link:active{
+  border: 2px solid #000000;
 }
+
 .hotel-card-title{
   margin: 0;
   padding: 0;
