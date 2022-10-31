@@ -557,11 +557,26 @@ body {
   background: #FFFFFF;
   border-radius: 4px;
 }
+
 .control:hover .control-mark{
   background: rgba(255, 255, 255, 0.6);
 }
 .control:hover .control-label{
   color: rgba(255, 255, 255, 0.6);
+}
+.control:focus-within .control-mark{
+  background: rgba(255, 255, 255, 1);
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+.control:focus-within .control-label{
+  color: rgba(255, 255, 255, 1);
+}
+.control:active .control-mark{
+  background: rgba(255, 255, 255, 0.3);
+}
+.control:active .control-label{
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .control-input:disabled + .control-mark {
@@ -569,10 +584,10 @@ body {
 }
 .control-input[type="checkbox"]:checked + .control-mark::before{
   position: absolute;
-  top: 7px;
-  left: 2px;
-  width: 12px;
-  height: 12px;
+  top: 6px;
+  left: 4px;
+  width: 13px;
+  height: 10px;
   content: "";
   background-image: url("../images/allow.svg");
   background-repeat: no-repeat;
