@@ -800,17 +800,27 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid #000000;
+  /*border: 2px solid #000000;*/
   border-radius: 4px;
 }
 .view-no-active{
   border: 2px solid #E5E5E5;
+}
+.view-active{
+  border: 2px solid #000000;
 }
 .catalog-view-link:hover {
   border: 2px solid #000000;
 }
 .catalog-view-link:focus-within{
   border: 2px solid #68A2CA;
+}
+
+.view:focus-within{
+  border: 2px solid #FFFFFF;
+}
+.button:focus-within{
+  border: 2px solid #FFFFFF;
 }
 .catalog-view-link:active{
   border: 2px solid #000000;
