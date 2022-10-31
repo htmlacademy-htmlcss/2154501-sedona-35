@@ -565,7 +565,18 @@ body {
 }
 
 .control-input:disabled + .control-mark {
-  border-color: #242424;
+  background: rgba(255, 255, 255, 0.3);
+}
+.control-input[type="checkbox"]:checked + .control-mark::before{
+  position: absolute;
+  top: 7px;
+  left: 2px;
+  width: 12px;
+  height: 12px;
+  content: "";
+  background-image: url("../images/allow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .type-house-block{
