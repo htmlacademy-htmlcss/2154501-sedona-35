@@ -815,13 +815,11 @@ body {
 .catalog-view-link:focus-within{
   border: 2px solid #68A2CA;
 }
+.button-for-view:-webkit-any-link:focus-visible{
+  outline-offset: none;
+}
 
-.view:focus-within{
-  border: 2px solid #FFFFFF;
-}
-.button:focus-within{
-  border: 2px solid #FFFFFF;
-}
+
 .catalog-view-link:active{
   border: 2px solid #000000;
 }
