@@ -182,5 +182,72 @@
     </div>
     </footer>
 
+    <div class="modal-container">
+      <div class="modal modal-search">
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <h2 class="modal-title">Поиск гостиницы в седоне</h2>
+            <div class="modal-line">
+              <label class="modal-label" for="date-of-entry">Дата Заезда:</label>
+              <input class="text-input" type="text" id="date-of-entry" name="date-of-entry" placeholder="27 апреля 2020">
+              <button class="date-button" type="button">
+                <span class="visually-hidden">Календарь</span>
+              </button>
+              <p class="date-text">Мы не можем отправить вас в прошлое.</p>
+            </div>
+            <div class="modal-line">
+              <label class="modal-label" for="date-of-exit">Дата Выезда:</label>
+              <input class="text-input" type="text" id="date-of-exit" name="date-of-exit" placeholder="1 сентября 2023">
+              <button class="date-button" type="button">
+                <span class="visually-hidden">Календарь</span>
+              </button>
+              <p class="date-text-second">На эти даты есть свободные номера. Пока есть.</p>
+            </div>
+            <div class="modal-line-double">
+              <div class="modal-field">
+                <label class="modal-label" for="starpers">Взрослые:</label>
+                <span class="modal-box">
+                  <button class="modal-button minus" type="button">
+                    <span class="visually-hidden">Минус</span>
+                  </button>
+                  <input class="field-number" id="starpers" type="number" value="2">
+                  <button class="modal-button plus" type="button">
+                    <span class="visually-hidden">Плюс</span>
+                  </button>
+                </span>
+              </div>
+
+              <div class="modal-field">
+                <label class="modal-label" for="children">Дети:</label>
+                <span class="modal-box">
+                  <button class="modal-button minus" type="button">
+                    <span class="visually-hidden">Минус</span>
+                  </button>
+                  <input class="field-number" id="children" type="number" value="1">
+                  <button class="modal-button plus" type="button">
+                    <span class="visually-hidden">Плюс</span>
+                  </button>
+                </span>
+                <span class="tooltip">
+                  <span class="tooltip-text" role="tooltip" id="tooltip-children">
+                    текст
+                  </span>
+                </span>
+              </div>
+              <button class="find" type="submit">
+                Найти
+              </button>
+            </div>
+
+
+
+          </form>
+        </section>
+      </div>
+    </div>
+
   </body>
   </html>
