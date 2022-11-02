@@ -1207,7 +1207,7 @@ html {
 .modal-title {
   margin: 0;
   margin-bottom: 64px;
-  font-family: "PT Sans Narrow", sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -1218,14 +1218,68 @@ html {
   margin: 0;
   margin-bottom: 16px;
 }
-
+.modal-line{
+  display: grid;
+  grid-template-columns: 119px 440px;
+  grid-template-rows: 48px 21px;
+  gap: 4px 18px;
+  margin-bottom: 23px;
+}
+.modal-label{
+  grid-area: 1 / 1 / 2 / 2;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  padding: 12px 0;
+}
+.text-input{
+  position: relative;
+  width: 440px;
+  padding: 12px 20px;
+  background: #F2F2F2;
+  border-radius: 4px;
+  border: none;
+  grid-area: 1 / 2 / 2 / 3;
+  box-sizing: border-box;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+.text-input::-webkit-input-placeholder { color: black; }
+.text-input::before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 20px;
+  bottom: 12px;
+  background: url(../images/calendar.svg) no-repeat center / contain;
+}
+.date-text{
+  margin: 0;
+  padding: 0 20px;
+  grid-area: 2 / 2 / 3 / 3;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FF5757;
+}
 .modal-line-double{
   display: grid;
+  grid-template-columns: 247px 242px;
+  grid-template-rows: 48px 60px;
+  gap: 48px 88px;
 }
 .modal-field{
   display: flex;
+  grid-area: 1 / 1 / 2 / 2;
 }
 .modal-box{
+
   display: grid;
   grid-template-columns: 50px 33px 50px;
 }
@@ -1242,7 +1296,7 @@ html {
 .tooltip{
   position: relative;
   margin: 14px 10px 11px;
-  padding 5px;
+  padding: 5px;
   border-radius: 50px;
   background: #83B3D3;
   cursor: help;
@@ -1262,4 +1316,11 @@ html {
   left:50%;
   transform: translateX(-50%);
   z-index: 1;
+}
+.tooltip::before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: url(../images/info.svg) no-repeat center / contain;
 }
