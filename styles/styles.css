@@ -1226,13 +1226,16 @@ html {
   margin-bottom: 23px;
 }
 .modal-label{
-  grid-area: 1 / 1 / 2 / 2;
+
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   color: #000000;
   padding: 12px 0;
+}
+.modal-label-sc{
+  margin-right: 46px;
 }
 .text-input{
   position: relative;
@@ -1250,14 +1253,18 @@ html {
   color: #000000;
 }
 .text-input::-webkit-input-placeholder { color: black; }
-.text-input::before {
+.text-input::before{
+  top: 5px;
+  left: 5px;
+  margin: auto;
+  width: 10px;
+  height: 10px;
   content: "";
-  display: block;
-  position: absolute;
-  right: 20px;
-  bottom: 12px;
-  background: url(../images/calendar.svg) no-repeat center / contain;
+  background-image: url("../images/calendar.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
 .date-text{
   margin: 0;
   padding: 0 20px;
@@ -1270,28 +1277,63 @@ html {
 }
 .modal-line-double{
   display: grid;
-  grid-template-columns: 247px 242px;
-  grid-template-rows: 48px 60px;
-  gap: 48px 88px;
+    grid-template-rows: 48px 60px;
+  gap: 48px;
+}
+.starpers-children{
+  display: flex;
+  justify-content: space-between;
 }
 .modal-field{
   display: flex;
-  grid-area: 1 / 1 / 2 / 2;
 }
 .modal-box{
-
+  border: none;
   display: grid;
   grid-template-columns: 50px 33px 50px;
 }
 .modal-button{
   display: flex;
+  border: none;
+}
+.minus{
+  background: url(../images/minus.svg) no-repeat center ;
+  background-color: #F2F2F2;
+  border-radius: 4px 0 0 4px;
+}
+.plus{
+  background: url(../images/plus.svg) no-repeat center ;
+  background-color: #F2F2F2;
+  border-radius: 0 4px 4px 0;
 }
 .field-number{
   box-sizing: border-box;
+  border: none;
+  background: #F2F2F2;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
 }
 .field-number::-webkit-inner-spin-button,
 .field-number::-webkit-outer-spin-button{
   display: none;
+}
+.find{
+  border: none;
+  border-radius: 4px;
+  background-color: #83B3D3;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
 .tooltip{
   position: relative;
