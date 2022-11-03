@@ -34,7 +34,6 @@
           </li>
           <li class="navigation-item">
             <a class="navigation-link-for-icon heart" href="#">
-              <!--<img class="favorits" src="./images/favorits.svg " alt="Избранное">-->
               <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.9 19a1 1 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 6.5 2C7.8 2 9 2.5 10 3.3a5.5 5.5 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5 6.1 6.9 6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.7-1.3 3.3 3.3 0 0 0-3.3 3.3c-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" fill="#000"/></svg>
               <span class="visually-hidden">Избранное</span>
               <span class="number-of-heart">12</span>
@@ -55,7 +54,7 @@
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">
-              <svg class="icon breadcrumbs-link" width="13" height="15" viewBox="0 0 13 15"  xmlns="http://www.w3.org/2000/svg"><path d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z" /><path d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z" /></svg>
+              <svg class="icon " width="13" height="15" viewBox="0 0 13 15"  xmlns="http://www.w3.org/2000/svg"><path d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z" /><path d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z" /></svg>
             </a>
           </li>
           <li class="breadcrumbs-item">
@@ -74,20 +73,23 @@
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="swimming-pool" checked>
-                  Бассейн
+                  <input class="visually-hidden control-input" type="checkbox" name="swimming-pool" checked>
+                  <span class="control-mark"></span>
+                  <span class="control-label">Бассейн</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="parking" checked>
-                  Парковка
+                  <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                  <span class="control-mark"></span>
+                  <span class="control-label">Парковка</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="wi-fi">
-                  Wi-Fi
+                  <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Wi-Fi</span>
                 </label>
               </li>
             </ul>
@@ -98,26 +100,50 @@
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="type-of-housing" value="hotel" checked>
-
-                  Гостиница
+                  <input class="visually-hidden control-input" type="radio" name="type-of-housing" value="hotel" checked>
+                  <span class="control-mark-circle"></span>
+                  <span class="control-label">Гостиница</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="type-of-housing" value="motel">
-
-                  Мотель
+                  <input class="visually-hidden control-input" type="radio" name="type-of-housing" value="motel">
+                  <span class="control-mark-circle"></span>
+                  <span class="control-label">Мотель</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="type-of-housing" value="apartments">
-
-                  Апартаменты
+                  <input class="visually-hidden control-input" type="radio" name="type-of-housing" value="apartments" >
+                  <span class="control-mark-circle"></span>
+                  <span class="control-label">Апартаменты</span>
                 </label>
               </li>
             </ul>
+          </fieldset>
+
+          <fieldset class="catalog-filter-group range-group">
+            <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+
+            <div class="range">
+              <div class="range-wrapper-inputs ">
+                <label class="catalog-filter-label label-min">
+                  <input class="range-input range-left" type="number" value="0" name="min-price"></label>
+                <label class="catalog-0filter-label label-max">
+                  <input class="range-input range-right" type="number" value="9000" name="max-price"></label>
+              </div>
+
+              <div class="range-scale">
+                <div class="range-bar" style="left: 0; width: 226px">
+                  <button class="range-toggle toggle-min">
+                    <span class="visually-hidden">Изменить минимальную цену.</span>
+                  </button>
+                  <button class="range-toggle toggle-max">
+                    <span class="visually-hidden">Изменить максимальную цену.</span>
+                  </button>
+                </div>
+              </div>
+            </div>
           </fieldset>
 
           <section class="filter-buttons">
@@ -131,32 +157,31 @@
     <section class="catalog">
       <div class="catalog-head">
         <h1 class="inner-main-title">Найдено гостиниц: 38</h1>
-        <select class="select-control" aria-label="Сортировка">
-            <option value="cheap">Сначала дешевые</option>
-            <option value="popular">Сначала популярные</option>
-            <option value="expensive">Сначала дорогие</option>
-        </select>
+        <div class= "select sorting-type">
+          <select class="select-control" aria-label="Сортировка">
+              <option value="cheap">Сначала дешевые</option>
+              <option value="popular">Сначала популярные</option>
+              <option value="expensive">Сначала дорогие</option>
+          </select>
+        </div>
         <div class="catalog-view">
-            <div class="view catalog-view-link view-active">
-              <a href="#" class="button button-active">
-                <!--<img class="view" src="./images/view-cards.svg" alt="карточки">-->
+            <div class="catalog-view-link view-active">
+              <a href="#" class="button-for-view">
                 <svg class="view" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" fill="#000"><path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v14H0z"/></clipPath></defs></svg>
-                <span class="visually-hidden" hidden>Показать карточки</span>
+                <span class="visually-hidden">Показать карточки</span>
               </a>
             </div>
-            <div class="view catalog-view-link view-no-active">
-              <a class="button button-no-active" href="#">
-                <!--<img class="view" src="./images/view-full.svg" alt="полностью">-->
+            <div class="catalog-view-link view-no-active">
+              <a class="button-for-view" href="#">
                 <svg class="view" width="16" height="14" viewBox="0 0 16 14"  xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" ><path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z"/></g><defs><clipPath id="b"><path  d="M0 0h16v14H0z"/></clipPath></defs></svg>
-                <span class="visually-hidden" hidden>Показать полностью</span>
+                <span class="visually-hidden">Показать полностью</span>
               </a>
             </div>
-            <div class="view catalog-view-link view-no-active">
-            <a class="button button-no-active" href="#">
-              <!--<img class="view" src="./images/view-list.svg" alt="список">-->
-              <svg class="view" width="16" height="14" viewBox="0 0 16 14"  xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" ><path d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"/></g><defs><clipPath id="c"><path  d="M0 0h16v14H0z"/></clipPath></defs></svg>
-              <span class="visually-hidden" hidden>Показать списком</span>
-            </a>
+            <div class=" catalog-view-link view-no-active">
+              <a class="button-for-view" href="#">
+                <svg class="view" width="16" height="14" viewBox="0 0 16 14"  xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" ><path d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"/></g><defs><clipPath id="c"><path  d="M0 0h16v14H0z"/></clipPath></defs></svg>
+                <span class="visually-hidden">Показать списком</span>
+              </a>
             </div>
         </div>
         </div>
@@ -306,6 +331,79 @@
       </section>
     </div>
     </footer>
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-search">
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <h2 class="modal-title">Поиск гостиницы в седоне</h2>
+            <div class="modal-line">
+              <label class="modal-label" for="date-of-entry">Дата Заезда:</label>
+              <input class="text-input" type="text" id="date-of-entry" name="date-of-entry" placeholder="27 апреля 2020">
+              <button class="date-button" type="button">
+                <span class="visually-hidden">Календарь</span>
+              </button>
+              <p class="date-text">Мы не можем отправить вас в прошлое.</p>
+            </div>
+            <div class="modal-line">
+              <label class="modal-label" for="date-of-exit">Дата Выезда:</label>
+              <input class="text-input" type="text" id="date-of-exit" name="date-of-exit" placeholder="1 сентября 2023">
+              <button class="date-button" type="button">
+                <span class="visually-hidden">Календарь</span>
+              </button>
+              <p class="date-text">На эти даты есть свободные номера. Пока есть.</p>
+            </div>
+            <div class="modal-line-double">
+              <div class="starpers-children">
+                <div class="modal-field">
+                  <label class="modal-label modal-label-sc" for="starpers">Взрослые:</label>
+                  <span class="modal-box">
+                    <button class="modal-button minus" type="button">
+                      <span class="visually-hidden">Минус</span>
+                    </button>
+                    <input class="field-number" id="starpers" type="number" value="2">
+                    <button class="modal-button plus" type="button">
+                      <span class="visually-hidden">Плюс</span>
+                    </button>
+                  </span>
+                </div>
+
+                <div class="modal-field">
+                  <span class="modal-label modal-label-sc">
+                    <label class="modal-label-children" for="children">Дети:</label>
+                    <span class="tooltip">
+                      <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                        <svg class="tooltip-icon" width="26" height="26" viewBox="0 0 26 26" fill="none"><circle cx="13" cy="13" r="13" fill="#83B3D3"/><path fill-rule="evenodd" clip-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" fill="#fff"/></svg>
+                      </button>
+                      <span class="tooltip-text" role="tooltip" id="tooltip-label-date">
+                        Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                      </span>
+                    </span>
+                  </span>
+                    <span class="modal-box">
+                    <button class="modal-button minus" type="button">
+                      <span class="visually-hidden">Минус</span>
+                    </button>
+                    <input class="field-number" id="children" type="number" value="1">
+                    <button class="modal-button plus" type="button">
+                      <span class="visually-hidden">Плюс</span>
+                    </button>
+                  </span>
+                </div>
+              </div>
+              <button class="find" type="submit">
+                Найти
+              </button>
+            </div>
+
+
+
+          </form>
+        </section>
+      </div>
+    </div>
 
   </body>
 </html>
