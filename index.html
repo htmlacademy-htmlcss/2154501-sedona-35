@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="images/favicon.ico"> <!-- 32×32 -->
   </head>
 
   <body>
@@ -12,7 +13,7 @@
         <ul class="navigation-list">
           <li class="navigation-item-high">
             <a class="logo" href="#">
-              <img class="" src="./images/logo.svg" alt="Логотип Седона."></a>
+              <img src="./images/logo.svg" width="140" height="70" alt="Логотип Седона." ></a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link navigation-link-current" href="#">Главная</a>
@@ -27,21 +28,18 @@
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link-for-icon" href="#">
-              <!--<img class="search" src="./images/search.svg " alt="Поиск">-->
               <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m18.5 17-3.7-3.7a8 8 0 0 0 1.7-4.8 8 8 0 1 0-3.1 6.3l3.7 3.7 1.4-1.5Zm-10-2.5a6 6 0 0 1-6-6 6 6 0 0 1 12 0 6 6 0 0 1-6 6Z" fill="#000"/></svg>
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link-for-icon heart" href="#">
-              <!--<img class="favorits" src="./images/favorits.svg " alt="Избранное">-->
               <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.9 19a1 1 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 6.5 2C7.8 2 9 2.5 10 3.3a5.5 5.5 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5 6.1 6.9 6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.7-1.3 3.3 3.3 0 0 0-3.3 3.3c-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" fill="#000"/></svg>
               <span class="visually-hidden">Избранное</span>
               <span class="number-of-heart">12</span>
             </a>
           </li>
           <li class="navigation-item">
-            <!--<a class="navigation-link button-want" href="#">ХОЧУ СЮДА!</a>-->
             <button class="button-want button-red" type="button">ХОЧУ СЮДА!</button>
           </li>
         </ul>
@@ -61,7 +59,7 @@
       </section>
 
       <section class="advantages">
-        <h3 class="visually-hidden" hidden>Преимущества</h3>
+        <h3 class="visually-hidden">Преимущества</h3>
         <ul class="advantages-list">
           <li class="advantages-item tape-1 for-shadow">
               <div class="advantages-item1">
@@ -103,20 +101,20 @@
       </section>
 
       <section class="feautures">
-        <h3 class="visually-hidden" hidden>Особенности</h3>
+        <h3 class="visually-hidden">Особенности</h3>
         <ul class="feautures-list">
           <li class="feautures-item feautures-1">
-              <img class="feature-icon home-icon" src="./images/advantage-home.svg" alt="иконка жилья">
+              <img class="feature-icon home-icon" src="./images/advantage-home.svg" width="75" height="72" alt="иконка жилья">
               <h4 class="feautures-title">Жилье</h4>
               <p class="feautures-description">Рекомендуем пожить<br>в настоящем мотеле,&nbsp<br>всё как в кино!</p>
           </li>
           <li class="feautures-item feautures-2">
-              <img class="feature-icon food-icon" src="./images/advantage-food.svg" alt="иконка еды">
+              <img class="feature-icon food-icon" src="./images/advantage-food.svg" width="74" height="70" alt="иконка еды">
               <h4 class="feautures-title">Еда</h4>
               <p class="feautures-description">Всегда заказывайте<br>топовый фирменный бургер,<br>вы не разочаруетесь!</p>
           </li>
           <li class="feautures-item feautures-3">
-              <img class="feature-icon suvenir-icon" src="./images/advantage-suvenier.svg" alt="иконка сувениров">
+              <img class="feature-icon suvenir-icon" src="./images/advantage-suvenier.svg" width="64" height="76" alt="иконка сувениров">
               <h4 class="feautures-title">Сувениры</h4>
               <p class="feautures-description">Не только китайского,&nbsp<br>но и настоящего местного<br>производства!</p>
           </li>
@@ -134,7 +132,6 @@
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
           <p class="subscribe-text">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label for="newsletter-email" hidden>Email</label>
             <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
             <button class="newsletter-button button-blue" type="submit">Подписаться</button>
           </form>
