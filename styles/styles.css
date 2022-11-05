@@ -1252,7 +1252,7 @@ html {
   width: 576px;
 }
 .modal-container-close {
-  /*display: none;*/
+  display: none;
 }
 .modal-search {
   width: 577px;
@@ -1390,54 +1390,71 @@ html {
 .modal-button{
   display: flex;
   border: none;
+  justify-content: center;
+  align-items: center;
   padding: 0;
 }
 .minus{
-  /*background: url(../images/minus.svg) no-repeat center;*/
   background-color: #F2F2F2;
   border-radius: 4px 0 0 4px;
   position: relative;
+  fill:rgba(204, 204, 204, 1);
+  padding-top: 0;
 }
-.minus::before{
-  content: "";
-  position: absolute;
-  width: 14px;
-  height: 2px;
-  background: rgba(117, 97, 87, 0.3);
-  top: 23px;
-  left: 13px;
+.icon-minus:hover{
+  fill: #000000;
 }
-.minus:hover:before{
-  background-color: #000000;
+.minus:focus .icon-minus{
+  fill: #000000;
+  outline: none;
+  padding: 3px 3px;
+  border: 3px solid #82B3D3;
+  border-radius: 4px;
+}
+.minus:focus {
+  fill: #000000;
+  outline: none;
+}
+.minus:active .icon-minus{
+  fill: rgba(204, 204, 204, 1);
+  outline: none;
+  border: none;
+}
+.minus:active{
+  fill: rgba(204, 204, 204, 1);
+  outline: none;
+  border: none;
 }
 .plus{
-  /*background: url(../images/plus.svg) no-repeat center ;*/
-  background-color: #F2F2F2;
   border-radius: 0 4px 4px 0;
+  background-color: #F2F2F2;
   position: relative;
+  fill:rgba(204, 204, 204, 1);
+  padding-top: 0;
 }
-.plus::before{
-  content: "";
-  position: absolute;
-  width: 14px;
-  height: 2px;
-  background: rgba(117, 97, 87, 0.3);
-  top: 23px;
-  left: 13px;
+.icon-plus:hover{
+  fill: #000000;
 }
-.plus::after{
-  content: "";
-  position: absolute;
-  width: 14px;
-  height: 2px;
-  background: rgba(117, 97, 87, 0.3);
-  transform: rotate(-90deg);
-  top: 23px;
-  left: 13px;
+.plus:focus .icon-plus{
+  fill: #000000;
+  outline: none;
+  padding: 3px 3px;
+  border: 3px solid #82B3D3;
+  border-radius: 4px;
 }
-.plus:hover:before,
-.plus:hover:after{
-  background-color: #000000;
+.plus:focus {
+  fill: #000000;
+  outline: none;
+}
+.plus:active .icon-plus{
+  fill: rgba(204, 204, 204, 1);
+  outline: none;
+  border: none;
+}
+.plus:active{
+  fill: rgba(204, 204, 204, 1);
+  outline: none;
+  border: none;
 }
 .field-number{
   box-sizing: border-box;
