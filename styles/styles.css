@@ -1074,6 +1074,7 @@ html {
   margin: 0;
   padding: 0;
   list-style: none;
+  flex-wrap: wrap;
 }
 .pagination-item:not(:last-child) {
   margin-right: 8px;
