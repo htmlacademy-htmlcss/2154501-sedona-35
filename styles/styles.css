@@ -306,12 +306,14 @@ body {
 
 .tape-img {
   background-image: url("../images/tape-1.jpg");
+  background-color: #68a2ca;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .tape-third-img {
   background-image: url("../images/tape-3.jpg");
+  background-color: #68a2ca;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -835,6 +837,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   margin-left: 70px;
+  margin-top: 26px;
 }
 
 .button-for-filter {
