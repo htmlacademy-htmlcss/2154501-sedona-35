@@ -272,11 +272,6 @@ body {
 .advantages-item {
   width: 400px;
   min-height: 384px;
-}
-
-.advantages-item1 {
-  width: 400px;
-  min-height: 384px;
   margin: 0;
 }
 
@@ -322,24 +317,19 @@ body {
   background-size: cover;
 }
 
-.tape-1 {
+.tape-blue {
   color: #ffffff;
   background-color: #82b3d3;
 }
 
-.tape-2 {
+.tape-white {
   color: #000000;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.tape-2-2 {
+.tape-grey {
   color: #000000;
   background-color: rgba(131, 179, 211, 0.2);
-}
-
-.tape-3 {
-  color: #ffffff;
-  background-color: #82b3d3;
 }
 
 .feautures-title {
@@ -966,6 +956,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fill, 48px);
   grid-template-rows: 48px;
+  grid-auto-rows: 48px;
   gap: 8px;
   justify-items: stretch;
   margin-left: 0;
