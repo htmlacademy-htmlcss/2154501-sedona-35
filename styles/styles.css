@@ -90,7 +90,6 @@ body {
 }
 
 .navigation-item {
-  /*max-height: 64px;*/
   position: relative;
 }
 
@@ -237,7 +236,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 62px;
-  padding-top: 93px;/***/
+  padding-top: 93px;
   margin-top: 0;
 }
 
@@ -650,7 +649,6 @@ body {
   padding-left: 36px;
 }
 
-/* Mark */
 .control-mark {
   position: absolute;
   top: 0;
@@ -913,7 +911,6 @@ body {
   line-height: 21px;
   width: 100%;
   padding-left: 19px;
-  /*padding-right: 48px;*/
   min-height: 50px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
@@ -966,7 +963,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /*border: 2px solid #000000;*/
   border-radius: 4px;
 }
 
@@ -1114,7 +1110,6 @@ html {
   flex-wrap: wrap;
   list-style: none;
   gap: 18px;
-  /*border-bottom: solid 1px #E6E6E6;*/
   padding-bottom: 39px;
 }
 
@@ -1176,7 +1171,6 @@ html {
   background-color: #f2f2f2;
   border-radius: 4px;
   display: flex;
-  /*justify-content: center;*/
   align-items: center;
   min-width: 140px;
   min-height: 37px;
@@ -1272,7 +1266,6 @@ html {
   margin-left: 12px;
 }
 
-/* Range */
 .range {
   margin-top: -1px;
 }
@@ -1295,7 +1288,6 @@ html {
   width: 20px;
   height: 20px;
   background: #ffffff;
-  /*border: 2px solid #ffffff;*/
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -1328,13 +1320,11 @@ html {
 
 .range-wrapper-inputs {
   display: flex;
-  /*justify-content: center;*/
   justify-content: space-between;
 }
 
 .catalog-filter-label {
   display: flex;
-  /*margin-right: 5px;*/
   width: 143px;
   margin: 0;
   padding: 0;
@@ -1349,9 +1339,7 @@ html {
 .range-input {
   margin: 0;
   padding: 0;
-  /*font: inherit;*/
   text-align: left;
-  /*background-color: transparent;*/
   border: none;
   appearance: textfield;
   padding-left: 20px;
