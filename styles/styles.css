@@ -244,6 +244,7 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
 }
 
@@ -278,20 +279,6 @@ body {
   background-color: rgba(0, 0, 0, 0.3);
   content: "";
 }
-.tape1{
-  width: 1200px;
-  display: flex;
-  justify-content: space-between;
-}
-.tape2{
-  display: flex;
-  justify-content: space-between;
-}
-.tape3{
-  width: 1200px;
-  display: flex;
-  justify-content: space-between;
-}
 .advantages-img{
   width: 800px;
   min-height: 384px;
@@ -322,13 +309,7 @@ body {
   color:#FFFFFF;
   background-color: #82B3D3;
 }
-.tape-3-2{
-  width: 400px;
-}
-.feautures-list-width{
-  display: flex;
-  justify-content: space-between;
-}
+
 .feautures-title{
   font-weight: 700;
   font-size: 24px;
@@ -721,6 +702,7 @@ body {
 }
 .breadcrumbs-link{
   display: flex;
+  flex-wrap: wrap;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
@@ -856,6 +838,8 @@ body {
   margin-top: 50px;
   margin-bottom: 40px;
   display: flex;
+  flex-wrap: wrap;
+  min-height: 50px;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
@@ -863,8 +847,9 @@ body {
   margin-right: 62px;
 }
 .catalog-view{
+  width: 160px;
   display: grid;
-  grid-template-columns: repeat(3, 48px);
+  grid-template-columns: repeat(auto-fill, 48px);
   grid-template-rows: 48px;
   gap: 8px;
   justify-items: stretch;
@@ -1007,11 +992,12 @@ html {
   border: 1px solid #E6E6E6;
   display: grid;
   grid-template-columns: 140px 140px;
-  grid-template-rows: 212px 28px 21px 36px 37px;
+  grid-template-rows: minmax(212px, auto) minmax(28px, auto) minmax(21px, auto) minmax(36px, auto) minmax(37px, auto);
   grid-gap: 16px;
   column-gap: 20px;
   box-sizing: border-box;
   border-radius: 4px;
+  word-wrap: break-word;
 }
 .hotel-card-image{
   grid-column: 1 / -1;
@@ -1020,10 +1006,11 @@ html {
 
 .hotel-card-link{
   display:grid;
-  grid-template-rows: 212px 28px;
+  grid-template-rows: minmax(212px, auto) minmax(28px, auto);
   grid-template-columns: auto;
   gap: 16px;
   text-decoration: none;
+  word-wrap: break-word;
   grid-column: 1 / -1;
   grid-row: 1 / 3;
 }
@@ -1392,6 +1379,12 @@ html {
   font-size: 16px;
   line-height: 21px;
   color: #FF5757;
+}
+.red-text{
+  color: #FF5757;
+}
+.dark-text{
+  color: #333333;
 }
 .modal-line-double{
   display: grid;
