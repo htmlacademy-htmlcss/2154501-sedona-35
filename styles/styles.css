@@ -47,7 +47,7 @@ body {
   width: 700px;
   margin: 0;
   padding: 0;
-  padding-left: 247px;
+  padding-left: 239px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -56,7 +56,7 @@ body {
 
 .logo {
   position: absolute;
-  left: 78px;
+  left: 70px;
   top: 0;
   z-index: 1;
 }
@@ -64,7 +64,7 @@ body {
 .navigation-user {
   max-width: 268px;
   margin-left: auto;
-  margin-right: 58px;
+  margin-right: 68px;
 }
 
 .navigation-user .navigation-link {
@@ -168,7 +168,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   width: 1200px;
-  min-height: 375px;
+  min-height: 377px;
   display: block;
   color: #000000;
   background-color: #ffffff;
@@ -421,7 +421,7 @@ body {
 }
 
 .intrested {
-  min-height: 406px;
+  min-height: 405px;
   width: 1200px;
   display: flex;
 }
@@ -444,7 +444,7 @@ body {
   min-height: 415px;
   width: 1200px;
   display: flex;
-  margin-left: 8px;
+  margin-left: 0;
 }
 
 .newsletter-item {
@@ -460,7 +460,7 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-  color: #fffff;
+  color: #ffffff;
 }
 
 .subscribe-text {
@@ -524,7 +524,7 @@ body {
 }
 
 .page-footer-container-catalog {
-  padding-left: 15px;
+  padding-left: 0;
 }
 
 .footer-social {
@@ -619,8 +619,6 @@ body {
   min-height: 412px;
   max-width: 1200px;
   margin: 0;
-  margin-left: 4px;
-  margin-right: -7px;
   padding: 0;
   padding-top: 35px;
   padding-left: 70px;
@@ -649,7 +647,7 @@ body {
 }
 
 .infrostraction-block {
-  margin-right: 70px;
+  margin-right: 71px;
 }
 
 .control {
@@ -798,7 +796,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
-  margin-right: 10px;
+  margin-right: 11px;
   justify-content: center;
   align-items: center;
 }
@@ -832,7 +830,7 @@ body {
 }
 
 .catalog-filter-item-house {
-  margin-bottom: 15px;
+  margin-bottom: 16px;
   padding-top: 1px;
   font-weight: 400;
   font-size: 18px;
@@ -954,8 +952,8 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin-left: 68px;
-  margin-right: 62px;
+  margin-left: 60px;
+  margin-right: 69px;
 }
 
 .catalog-view {
@@ -1127,7 +1125,7 @@ html {
 
 .hotel-card-list {
   margin: 0;
-  margin-left: 37px;
+  margin-left: 29px;
   margin-top: -2px;
   display: grid;
   grid-template-columns: 342px 342px 342px;
@@ -1206,7 +1204,7 @@ html {
 .pagination-container {
   display: flex;
   padding: 39px 70px 60px 0;
-  margin-left: 78px;
+  margin-left: 70px;
   margin-right: 62px;
   border-top: solid 1px #e6e6e6;
 }
@@ -1287,7 +1285,7 @@ html {
 
 .range-group {
   width: 288px;
-  margin-left: 12px;
+  margin-left: 11px;
 }
 
 .range {
