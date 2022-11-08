@@ -259,6 +259,7 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
+  word-wrap: break-word;
 }
 
 .feautures-list {
@@ -310,7 +311,9 @@ body {
   background-color: #68a2ca;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: -5px;
+  margin-bottom: -6px;
+  object-fit: cover;
+  height: 100%;
 }
 
 .tape-third-img {
@@ -319,6 +322,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: -6px;
+  object-fit: cover;
+  height: 100%;
 }
 
 .tape-blue {
