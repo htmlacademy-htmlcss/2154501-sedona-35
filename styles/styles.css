@@ -307,7 +307,6 @@ body {
 }
 
 .tape-img {
-  /*background-image: url("../images/tape-1.jpg");*/
   background-color: #68a2ca;
   background-repeat: no-repeat;
   background-size: cover;
@@ -317,7 +316,6 @@ body {
 }
 
 .tape-third-img {
-  /*background-image: url("../images/tape-3.jpg");*/
   background-color: #68a2ca;
   background-repeat: no-repeat;
   background-size: cover;
@@ -483,6 +481,7 @@ body {
   display: flex;
   width: 684px;
   justify-content: flex-end;
+  margin: 0 auto;
 }
 
 .newsletter-button {
@@ -617,7 +616,7 @@ body {
 .inner-header {
   display: flex;
   flex-direction: column;
-  background-color: #f2f2f2;
+  background-color: #4b5f74;
   background-image: url("../images/filter.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -1059,7 +1058,7 @@ body {
   word-wrap: break-word;
 }
 
-.more{
+.more {
   padding: 0;
   margin: 0;
   word-wrap: break-word;
