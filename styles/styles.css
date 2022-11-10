@@ -1059,10 +1059,10 @@ body {
 }
 
 .more {
-  display: flex;
   padding: 0;
   margin: 0;
   word-wrap: break-word;
+  width: 140px;
 }
 
 .button:disabled {
