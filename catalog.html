@@ -28,13 +28,30 @@
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link-for-icon" href="#">
-              <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m18.5 17-3.7-3.7a8 8 0 0 0 1.7-4.8 8 8 0 1 0-3.1 6.3l3.7 3.7 1.4-1.5Zm-10-2.5a6 6 0 0 1-6-6 6 6 0 0 1 12 0 6 6 0 0 1-6 6Z" fill="#000"/></svg>
+              <svg
+                width="19"
+                height="19"
+                viewBox="0 0 19 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Поиск.">
+                <path d="m18.5 17-3.7-3.7a8 8 0 0 0 1.7-4.8 8 8 0 1 0-3.1 6.3l3.7 3.7 1.4-1.5Zm-10-2.5a6 6 0 0 1-6-6 6 6 0 0 1 12 0 6 6 0 0 1-6 6Z" fill="#000"/>
+              </svg>
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link-for-icon heart" href="#">
-              <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.9 19a1 1 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 6.5 2C7.8 2 9 2.5 10 3.3a5.5 5.5 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5 6.1 6.9 6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.7-1.3 3.3 3.3 0 0 0-3.3 3.3c-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" fill="#000"/></svg>
+              <svg
+                width="20"
+                height="20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Избранное.">
+                <path d="M9.9 19a1 1 0 0 1-.8-.4l-7-7.9A5.4 5.4 0 0 1 6.5 2C7.8 2 9 2.5 10 3.3a5.5 5.5 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5 6.1 6.9 6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4a3.7 3.7 0 0 0-2.7-1.3 3.3 3.3 0 0 0-3.3 3.3c-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" fill="#000"/>
+              </svg>
               <span class="visually-hidden">Избранное</span>
               <span class="number-of-heart">12</span>
             </a>
@@ -53,7 +70,17 @@
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">
-              <svg class="icon" width="13" height="15" viewBox="0 0 13 15"  xmlns="http://www.w3.org/2000/svg"><path d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z" /><path d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z" /></svg>
+              <svg
+                class="icon"
+                width="13"
+                height="15"
+                viewBox="0 0 13 15"
+                xmlns="http://www.w3.org/2000/svg"
+                role="img"
+                aria-label="Домой.">
+                <path d="m6.5.5-6 5.8v6.2h12V6.3L6.5.5Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z" />
+                <path d="M4.5 10.5h1V8h2v2.5h1V7h-4v3.5Z" />
+              </svg>
             </a>
           </li>
           <li class="breadcrumbs-item">
@@ -68,7 +95,7 @@
         <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="catalog-filter-group infrostraction-block">
-            <legend class="catalog-filter-title">Инфраструктура:</legend>
+            <legend class="catalog-filter-title infrostraction-title">Инфраструктура:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
@@ -95,7 +122,7 @@
           </fieldset>
 
           <fieldset class="catalog-filter-group type-house-block">
-            <legend class="catalog-filter-title">Тип Жилья:</legend>
+            <legend class="catalog-filter-title type-house-block-title">Тип Жилья:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item-house">
                 <label class="control">
@@ -122,7 +149,7 @@
           </fieldset>
 
           <fieldset class="catalog-filter-group range-group">
-            <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+            <legend class="catalog-filter-title cost-title">Стоимость, ₽:</legend>
 
             <div class="range">
               <div class="range-wrapper-inputs ">
@@ -167,19 +194,67 @@
         <div class="catalog-view">
             <div class="catalog-view-link view-active">
               <a class="button-for-view" href="#">
-                <svg class="view" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" fill="#000"><path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h16v14H0z"/></clipPath></defs></svg>
+                <svg
+                  class="view"
+                  width="16"
+                  height="14"
+                  viewBox="0 0 16 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  aria-label="Карточки.">
+                  <g clip-path="url(#a)" fill="#000">
+                    <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"/>
+                  </g>
+                  <defs>
+                    <clipPath id="a">
+                      <path fill="#fff" d="M0 0h16v14H0z"/>
+                    </clipPath>
+                  </defs>
+                </svg>
                 <span class="visually-hidden">Показать карточки</span>
               </a>
             </div>
             <div class="catalog-view-link view-no-active">
               <a class="button-for-view" href="#">
-                <svg class="view" width="16" height="14" viewBox="0 0 16 14"  xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" ><path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z"/></g><defs><clipPath id="b"><path  d="M0 0h16v14H0z"/></clipPath></defs></svg>
+                <svg
+                  class="view"
+                  width="16"
+                  height="14"
+                  viewBox="0 0 16 14"
+                  xmlns="http://www.w3.org/2000/svg"
+                  role="img"
+                  aria-label="Полностью.">
+                  <g clip-path="url(#a)" >
+                    <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z"/>
+                  </g>
+                  <defs>
+                    <clipPath id="b">
+                      <path  d="M0 0h16v14H0z"/>
+                    </clipPath>
+                  </defs>
+                </svg>
                 <span class="visually-hidden">Показать полностью</span>
               </a>
             </div>
             <div class=" catalog-view-link view-no-active">
               <a class="button-for-view" href="#">
-                <svg class="view" width="16" height="14" viewBox="0 0 16 14"  xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)" ><path d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"/></g><defs><clipPath id="c"><path  d="M0 0h16v14H0z"/></clipPath></defs></svg>
+                <svg
+                  class="view"
+                  width="16"
+                  height="14"
+                  viewBox="0 0 16 14"
+                  xmlns="http://www.w3.org/2000/svg"
+                  >
+                  <g clip-path="url(#a)" >
+                    <path d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"/>
+                  </g>
+                  <defs>
+                    <clipPath id="c">
+                      <path  d="M0 0h16v14H0z"/>
+                    </clipPath>
+                  </defs>
+                /svg>
                 <span class="visually-hidden">Показать списком</span>
               </a>
             </div>

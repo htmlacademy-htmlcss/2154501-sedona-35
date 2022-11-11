@@ -181,7 +181,7 @@ body {
 
 .greetings::after {
   content: "";
-  background-image: url("..//images/divider.svg");
+  background-image: url("../images/divider.svg");
   display: block;
   width: 100%;
   height: 57px;
@@ -652,6 +652,7 @@ body {
 
 .infrostraction-block {
   margin-right: 71px;
+  max-width: 102px;
 }
 
 .control {
@@ -669,6 +670,10 @@ body {
   border: none;
   background: #ffffff;
   border-radius: 4px;
+}
+
+.control-label {
+  word-wrap: break-word;
 }
 
 .control:hover .control-mark {
@@ -768,6 +773,7 @@ body {
 
 .type-house-block {
   margin-right: 140px;
+  max-width: 171px;
 }
 
 .catalog-filter {
@@ -813,6 +819,13 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
+
+
+.type-house-block-title {
+  max-width: 171px;
+  word-wrap: break-word;
+}
+
 .catalog-filter-title {
   font-weight: 700;
   font-size: 20px;
@@ -821,12 +834,18 @@ body {
   margin-bottom: 33px;
 }
 
+.infrostraction-title {
+  max-width: 150px;
+  word-wrap: break-word;
+}
+
 .catalog-filter-item {
   margin-bottom: 15px;
   padding-top: 1px;
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
+  max-width: 150px;
 }
 
 .catalog-filter-item:last-child {
@@ -839,6 +858,12 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+  max-width: 171px;
+}
+
+.cost-title {
+  max-width: 287px;
+  word-wrap: break-word;
 }
 
 .filter-buttons {
@@ -1298,6 +1323,7 @@ html {
 
 .range-scale {
   margin-top: 44px;
+  margin-bottom: 20px;
   position: relative;
   height: 4px;
   background-color: rgba(255, 255, 255, 0.3);
