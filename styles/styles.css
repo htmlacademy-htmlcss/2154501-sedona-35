@@ -784,6 +784,11 @@ body {
   margin-right: 140px;
 }
 
+.type-house-block-title {
+  max-width: 150px;
+  word-wrap: break-word;
+}
+
 .catalog-filter {
   display: flex;
   width: 1060px;
